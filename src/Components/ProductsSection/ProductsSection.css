@@ -1,0 +1,86 @@
+.cardContainer {
+    max-width: 300px !important;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border: 1px groove rgba(139, 139, 139, 0.829) !important;
+    margin-bottom: 20px !important;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3) !important;
+    border: 1px groove rgba(99, 99, 99, 0.829) !important;
+}
+
+.cardTitle {
+    cursor: default;
+    max-width: fit-content;
+    position: relative;
+    font-size: 50px;
+    color: var(--white);
+    -webkit-text-stroke: 2px var(--gray);
+    text-transform: uppercase;
+}
+
+.cardTitle::before {
+    max-width: fit-content;
+    content: attr(data-text);
+    position: absolute;
+    width: 95px;
+    height: 100%;
+    color: var(--main-aqua);
+    -webkit-text-stroke: 0vw;
+    border-right: 2px solid var(--main-aqua);
+    overflow: hidden;
+}
+
+.card-text {
+    font-size: 20px;
+    color: var(--dark);
+    cursor: default;
+}
+
+.price {
+    color: var(--gray);
+    display: inline-block;
+}
+
+.number {
+    color: var(--gray);
+    font-family: monospace;
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: default;
+}
+
+.btn-danger {
+    background-color: var(--main-aqua) !important;
+    border: 1px solid var(--gray) !important;
+}
+
+.btn-danger:hover {
+    background-color: var(--dark-aqua) !important;
+}
+
+img{
+    height: 160px;
+}
+
+@media only screen and (max-width: 300px) {
+    .cardContainer {
+        max-width: 270px !important;
+    }
+
+    .cardTitle {
+        font-size: 30px;
+    }
+
+    .cardTitle::before {
+        width: 20%;
+    }
+}

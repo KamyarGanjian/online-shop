@@ -1,0 +1,14 @@
+.toast {
+    border-radius: 10px !important;
+}
+
+.toastRandomClass {
+    background-color: var(--dark);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+    .toast {
+        width: 240px !important;
+    }
+}

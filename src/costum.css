@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Roboto&display=swap');
+
+:root {
+    --gray: #9c9c9c;
+    --dark-gray: #888888;
+    --dark: #001219;
+    --main-white: #f0f8ff;
+    --white: #ffffff;
+    --main-red: #d90429;
+    --main-aqua: rgb(0, 184, 184);
+    --dark-aqua: rgb(0, 127, 127);
+    --main-background: rgb(252, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background);
+    font-family: "Comfortaa" !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--gray));
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, var(--dark-gray));
+}

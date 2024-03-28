@@ -1,0 +1,116 @@
+*:not(.bag-sidebar) {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*:not(.bag-sidebar):-webkit-scrollbar {
+    display: none;
+}
+
+.bag-sidebar {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 350px;
+    height: 100vh;
+    background-color: var(--white);
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto;
+    transition: 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--gray);
+}
+
+.bag-sidebar.active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.bag-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-icon {
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+.bagCard {
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border: 1px solid var(--dark-gray) !important;
+    margin-bottom: 20px !important;
+}
+
+.cartLogo {
+    width: 45px;
+    height: 45px;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center !important;
+}
+
+.cartTitle {
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.cartPrice {
+    color: var(--gray);
+    margin: 20px 30px;
+}
+
+.titleContainer {
+    display: flex;
+}
+
+@media only screen and (max-width: 450px) {
+    .bag-sidebar {
+        width: 100%;
+    }
+
+    .cartPrice {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .priceContainer {
+        flex-direction: column;
+    }
+
+    .cartTitle {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .titleContainer {
+        display: block;
+    }
+
+    .buyBtn {
+        margin-top: 15px;
+    }
+    .bagCard{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .bagCard{
+        width: 100%;
+        margin-left: auto;
+    }
+}
