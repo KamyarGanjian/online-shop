@@ -1,2 +1,2 @@
-# Responsive, Beautiful, React Js Shopping Cart
+# Responsive, Beautiful, React Js Shopping Cart Project
 <br/>
