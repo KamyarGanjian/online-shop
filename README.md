@@ -1,7 +1,5 @@
 # Responsive, Beautiful, React Js Shopping Cart Project
 
-<br/>
-
 ![Screenshot (22)](https://github.com/KamyarGanjian/online-shop/assets/145255798/22d0b394-7844-4387-a1e8-07a4d151d566)
 
 <br/>
